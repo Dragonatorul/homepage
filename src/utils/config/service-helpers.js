@@ -260,6 +260,14 @@ export function cleanServiceGroups(groups) {
           repositoryId,
           userEmail,
 
+          // recurring-timer
+          reference_time,
+          increment,
+          name,
+          description,
+          date_format,
+          countdown_format,
+
           // beszel
           systemId,
 
@@ -576,6 +584,14 @@ export function cleanServiceGroups(groups) {
         }
         if (type === "jellystat") {
           if (days !== undefined) widget.days = parseInt(days, 10);
+        }
+        if (type === "recurring-timer") {
+          if (reference_time) widget.reference_time = reference_time;
+          if (increment) widget.increment = increment;
+          if (name) widget.name = name;
+          if (description) widget.description = description;
+          if (date_format) widget.date_format = date_format;
+          if (countdown_format) widget.countdown_format = countdown_format;
         }
         return widget;
       });

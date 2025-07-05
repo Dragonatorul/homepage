@@ -113,6 +113,7 @@ You can also find a list of all available service widgets in the sidebar navigat
 - [QNAP](qnap.md)
 - [Radarr](radarr.md)
 - [Readarr](readarr.md)
+- [Recurring Timer](recurring-timer.md)
 - [ROMM](romm.md)
 - [ruTorrent](rutorrent.md)
 - [SABnzbd](sabnzbd.md)
